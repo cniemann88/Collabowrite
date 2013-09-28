@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Collabowrite.ResourceAccess.DbAccessor
 {
-    public class UserAccessor
+    public class UserAccessor : DatabaseBaseAccessor<User>
     {
         public void CreateManyUser(List<User> users)
         {
