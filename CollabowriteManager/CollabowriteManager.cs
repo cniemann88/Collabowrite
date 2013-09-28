@@ -12,8 +12,20 @@ namespace CollabowriteManager
     {
         public void CreateManyUser(List<User> users)
         {
-            UserAccessor userAccessor = new UserAccessor();
-            userAccessor.CreateManyUser(users);
+            UserAccessor ua = new UserAccessor();
+            ua.CreateManyUser(users);
+        }
+
+        public List<User> FindAllUsers()
+        {
+            UserAccessor ua = new UserAccessor();
+            return ua.FindAll().ToList();
+        }
+
+        public void UpdateUser(User user)
+        {
+            UserAccessor ua = new UserAccessor();
+            ua.Update(user);
         }
     }
 }
