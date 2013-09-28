@@ -3,6 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collabowrite", "Collabowrite\Collabowrite.csproj", "{8177E209-7BEF-422C-85F7-0DDE9A042080}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{00A8CB2D-6694-457A-8374-3A718A733B99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{50834A4B-9A83-48D7-9FF2-97FED9C9CD9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{BC6CB727-0258-4CF5-946E-9791ED87BC7E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CollabowriteDB", "CollabowriteDB\CollabowriteDB.sqlproj", "{AB82F2F1-97BF-438F-8021-6757E3400823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContracts", "DataContracts\DataContracts.csproj", "{132B23EE-82CC-46AD-9A30-EAE726645770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resource Access", "Resource Access", "{34D56FEC-2525-42FE-A13A-3480E3F4834B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbAccessor", "DbAccessor\DbAccessor.csproj", "{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Managers", "Managers", "{90EF69F9-5525-4C90-9B5C-45F05A050366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollabowriteManager", "CollabowriteManager\CollabowriteManager.csproj", "{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B7DE6986-C755-4719-B29A-B9C256BDEA62}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +36,33 @@ Global
 		{8177E209-7BEF-422C-85F7-0DDE9A042080}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8177E209-7BEF-422C-85F7-0DDE9A042080}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8177E209-7BEF-422C-85F7-0DDE9A042080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB82F2F1-97BF-438F-8021-6757E3400823}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{132B23EE-82CC-46AD-9A30-EAE726645770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132B23EE-82CC-46AD-9A30-EAE726645770}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132B23EE-82CC-46AD-9A30-EAE726645770}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132B23EE-82CC-46AD-9A30-EAE726645770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8177E209-7BEF-422C-85F7-0DDE9A042080} = {00A8CB2D-6694-457A-8374-3A718A733B99}
+		{132B23EE-82CC-46AD-9A30-EAE726645770} = {50834A4B-9A83-48D7-9FF2-97FED9C9CD9A}
+		{AB82F2F1-97BF-438F-8021-6757E3400823} = {BC6CB727-0258-4CF5-946E-9791ED87BC7E}
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F} = {34D56FEC-2525-42FE-A13A-3480E3F4834B}
+		{1FC9BB34-BE17-4021-BE25-5E68E2CECC9A} = {90EF69F9-5525-4C90-9B5C-45F05A050366}
 	EndGlobalSection
 EndGlobal
