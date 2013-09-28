@@ -26,6 +26,10 @@ namespace Collabowrite.Controllers
 
             mgr.CreateManyUser(users);
 
+            var allusers = mgr.FindAllUsers();
+
+            mgr.UpdateUser(new User() { Username = "Chris", Age = 18, Email = "@@@", Id = 127 });
+
             return View();
         }
 
