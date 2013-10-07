@@ -25,6 +25,6 @@ namespace Collabowrite.ResourceAccess.DbAccessor
         public DbSet<User> Users { get; set; }
         public DbSet<Sentence> Sentences { get; set; }
         public DbSet<Story> Stories { get; set; }
-        public DbSet<GameInformation> GameInformations { get; set; }
+        public DbSet<Game> GameInformations { get; set; }
     }
 }

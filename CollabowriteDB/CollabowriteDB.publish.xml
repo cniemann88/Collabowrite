@@ -4,7 +4,7 @@
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>CollabowriteDB</TargetDatabaseName>
     <DeployScriptFileName>CollabowriteDB.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=CHRISTOPHERNIEM;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=SEASHELL\SQLEXPRESS;Integrated Security=True;Pooling=False</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
 </Project>

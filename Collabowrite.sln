@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collabowrite", "Collabowrite\Collabowrite.csproj", "{8177E209-7BEF-422C-85F7-0DDE9A042080}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F} = {ED4ACD9E-8BAE-471E-9B5C-B17E82B17F1F}
+		{AB82F2F1-97BF-438F-8021-6757E3400823} = {AB82F2F1-97BF-438F-8021-6757E3400823}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{00A8CB2D-6694-457A-8374-3A718A733B99}"
 EndProject
@@ -24,10 +28,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B7DE6986-C755-4719-B29A-B9C256BDEA62}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestProjects", "TestProjects", "{44E4AAD0-5F6B-4313-A063-A865E0A2B28F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

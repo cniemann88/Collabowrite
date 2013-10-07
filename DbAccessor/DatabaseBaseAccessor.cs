@@ -15,6 +15,7 @@ namespace Collabowrite.ResourceAccess.DbAccessor
         {
             using (var db = new Db())
             {
+                entity.UUID = (Guid.NewGuid().ToString());
                 db.Set<TEntity>().Add(entity);
                 db.SaveChanges();
             }
@@ -70,7 +71,7 @@ namespace Collabowrite.ResourceAccess.DbAccessor
 
             using (var db = new Db())
             {
-                existing = db.Set<TEntity>().Find(entity.Id);
+                existing = db.Set<TEntity>().Find(entity.UUID);
             }
 
             if (existing == null)

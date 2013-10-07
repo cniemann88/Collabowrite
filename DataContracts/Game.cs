@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Collabowrite.Shared.DataContracts
 {
-    public class GameInformation : DatabaseBase
+    public class Game : DatabaseBase
     {
-        public int RoundTime { get; set; }
+       
     }
 }

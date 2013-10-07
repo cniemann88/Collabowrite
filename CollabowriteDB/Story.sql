@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Story]
+(
+	[UUID] NVARCHAR(50) NOT NULL , 
+    [Prompt] NVARCHAR(MAX) NOT NULL, 
+    CONSTRAINT [PK_Story] PRIMARY KEY ([UUID])
+)

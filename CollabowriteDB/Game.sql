@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Game]
+(
+	[UUID] NVARCHAR(50) NOT NULL, 
+    [RoundTime] TIME NOT NULL, 
+    [StartTime] TIME NOT NULL, 
+    [UserUUID] NVARCHAR(50) NULL, 
+    [StoryUUID] NVARCHAR(50) NULL, 
+    CONSTRAINT [PK_Game] PRIMARY KEY ([UUID]) 
+)

@@ -13,23 +13,7 @@ namespace Collabowrite.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            List<User> users = new List<Shared.DataContracts.User>();
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-            users.Add(new User() { Username = "Test1", Age = 12, Email = "Test@Test.com", Id = 0 });
-
-            var mgr = new CollabowriteManager.CollabowriteManager();
-
-            mgr.CreateManyUser(users);
-
-            var allusers = mgr.FindAllUsers();
-
-            mgr.UpdateUser(new User() { Username = "Chris", Age = 18, Email = "@@@", Id = 127 });
-
+           
             return View();
         }
 

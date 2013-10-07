@@ -9,6 +9,6 @@ namespace Collabowrite.Shared.DataContracts
     public class Story : DatabaseBase
     {
         //Populate this string with the order of sentences and with ',' separator
-        public string SentenceIds { get; set; }
+        public string SentenceUUID { get; set; }
     }
 }

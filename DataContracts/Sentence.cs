@@ -8,7 +8,7 @@ namespace Collabowrite.Shared.DataContracts
 {
     public class Sentence : DatabaseBase
     {
-        public int StoryId { get; set; }
+        public string StoryUIDD { get; set; }
 
         public string Text { get; set; }
     }
