@@ -46,11 +46,11 @@ namespace Collabowrite.ResourceAccess.DbAccessor
             }
         }
 
-        public virtual TEntity Find(long id)
+        public virtual TEntity Find(string uuid)
         {
             using (var db = new Db())
             {
-                return db.Set<TEntity>().Find(id);
+                return db.Set<TEntity>().Find(uuid);
             }
         }
         #endregion
